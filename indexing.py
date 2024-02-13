@@ -42,7 +42,7 @@ for sentence in documents:
         if word not in stopWords and word not in termList:
             termList.append(word)
     docTerms.append(termList)
-print(docTerms)
+# print(docTerms)
 
 #Conducting stemming. Hint: use a dictionary to map word variations to their stem.
 #--> add your Python code here
@@ -106,10 +106,10 @@ for i, docTerm in enumerate(docTerms):
 docTermMatrix = [[0.0] * columns for _ in range(columns)]
 # holds the idf for each term
 idfList = []
-# holds the tf for each document
-tfListMatrix = []
 # holds the tf
 tfList = []
+# holds the tf for each document
+tfListMatrix = []
 # holds the number of docs that include this term
 numOfDocsWithThisTerm = 0
 
